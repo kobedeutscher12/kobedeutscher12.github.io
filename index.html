@@ -115,8 +115,7 @@
       </div>
     </div>
 
-
-
+  
     <section class="site-section border-bottom" id="projects-section">
       <div class="container">
         <div class="row mb-5 justify-content-center">
@@ -127,23 +126,43 @@
         <div class="row">
           <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
           
-            <img src="" alt="Image of your project" class="img-fluid">
+            <video controls class="img-fluid">
+              <source src="images/Chess Game.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            
           
           </div>
           <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
             <div class="mb-4">
               <h3>Chess</h3>
               <p>
-               Motivation of the project
+               Motivation of the project:</br>
+               I chose to do this project because it allowed my to explore the depths of object orriented coding. Chess is a great example of being able break a large problem
+               down into its most basic pieces. From the outside the game is extremely complecated but I got to take that huge project and break it down into its individual
+               object.
               </p>
               <p>
-              Functional requirements/what the project does
+              Functional requirements/what the project does:</br>
+              This project implements a basic version of two player chess were the user tells the board which piece they would like to move and where. The primarly logic myself
+              and my team created is to check if the user can legally move a piece and if not it tells them they cannot and allows them to reenter the move. This project appeared
+              relatively simple at first but as you dive into the numerous aspects of it, it gets very complex.
               </p>
               <p>
-              Project design
+              Project design:</b>
+              The design for this project was to break it into three unique layers. One being the GUI, two being the board which would be an 8x8 array of arrays that stored pieces 
+              or null if there was no piece, and then three being the pieces which all inherite from an abstract piece type and are able to store their location, update their location
+              and return possible moves.
+              
               </p>
               <p>
-              Implementation
+              Implementation: </br>
+              For the project design I took on the brunt of the logic for it. I set up both a class called location which the pieces would have that returns a collumn and a row.
+              The pieces use this to determine where they are in an 8x8 matrix of arrays that is the board. Then each piece creates a method with in them that is unique to the type
+              of piece they are which returns all possible squares they can move to in an empty board. The board class which keeps track of pieces in teh 8x8 array (null if there is no
+              piece and the piece located there if there is a piece) then determines from the possible moves what is a valid move. The valid move simply checks if there are pieces blocking
+              it from getting to the input square or if the square they are going to has a piece of their type on it. My teammate Kent used these functions when setting up the GUI to allowed
+              the GUI to function as seen in the video where it displays the possible moves for a selected piece.
               </p>
 
 
@@ -175,7 +194,7 @@
           <div class="col-md-12 text-center">
             <p class="mb-0">
               <span class="icon-mail_outline d-block h4 text-primary"></span>
-              <span>email address</span>
+              <span>email address: kobe.deutscher@gmail.com</span>
             </p>
           </div>
           
